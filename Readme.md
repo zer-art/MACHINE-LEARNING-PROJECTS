@@ -1,6 +1,7 @@
 # 🧠 ML_PROJECTS
 
-<img src="https://imgs.search.brave.com/spjg-q8nUwxClwjKf1yqsDBezYSfv1groAvkptkqMKo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTMuZ2lwaHkuY29t/L21lZGlhL3YxLlky/bGtQVGM1TUdJM05q/RXhaRFprTm5KMWFH/aHZjbWxrYURFM2Nt/bDRjWGt5YzJZM1pu/QjBaalJ4ZERWeWJU/aHlObUpsWmlabGNE/MTJNVjlwYm5SbGNt/NWhiRjluYVdaZllu/bGZhV1FtWTNROVp3/LzZXeUlOWGQwTU01/R3FXaWNuai9naXBo/eS5naWY.gif" alt= "ml img" style="width: 100%; height: auto; display: block;">
+
+![ML Banner](https://imgs.search.brave.com/spjg-q8nUwxClwjKf1yqsDBezYSfv1groAvkptkqMKo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTMuZ2lwaHkuY29t/L21lZGlhL3YxLlky/bGtQVGM1TUdJM05q/RXhaRFprTm5KMWFH/aHZjbWxrYURFM2Nt/bDRjWGt5YzJZM1pu/QjBaalJ4ZERWeWJU/aHlObUpsWmlabGNE/MTJNVjlwYm5SbGNt/NWhiRjluYVdaZllu/bGZhV1FtWTNROVp3/LzZXeUlOWGQwTU01/R3FXaWNuai9naXBo/eS5naWY.gif)
 
 A collection of machine learning and data science projects, each designed to solve real-world problems using modern ML techniques. This repository showcases a variety of applications, including recommendation systems, healthcare assistants, crop and fertilizer prediction, and regression analysis.
 

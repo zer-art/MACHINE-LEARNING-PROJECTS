@@ -1,0 +1,74 @@
+# 🏥 Healthcare Question-Answering App
+
+A Python-based healthcare assistant that leverages a knowledge base and custom functions to answer user queries about health topics. Designed for extensibility and easy integration.
+
+## 🚀 Features
+
+- **Question-Answering System**: Answers health-related questions using a curated knowledge base.
+- **Extensible Functions**: Add custom logic for advanced queries.
+- **Modular Design**: Organized codebase for maintainability.
+- **CLI and API Ready**: Easily adaptable for web or command-line interfaces.
+
+## 🏗️ Project Structure
+
+```
+Helthcare-app/
+├── app.py                # Main application entry point
+├── knowledege_base.py    # Healthcare knowledge base logic
+├── src/
+│   ├── __init__.py
+│   ├── functions.py      # Custom functions for Q&A
+│   └── prompt.py         # Prompt templates and logic
+├── pyproject.toml        # Project configuration
+├── setup.py              # Setup script
+└── HEALTHCARE_APP.egg-info/
+```
+
+## 🛠️ Technologies Used
+
+- **Python 3.8+**
+- **Pandas** (if used for data)
+- **Custom Python modules**
+
+## 📋 Prerequisites
+
+- Python 3.8 or higher
+- pip package manager
+
+## 🔧 Installation
+
+```bash
+git clone <repository-url>
+cd ML_PROJECTS/Helthcare-app
+python -m venv venv
+source venv/bin/activate
+pip install -e .
+```
+
+## 🚀 Usage
+
+```bash
+python app.py
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
+
+## 👤 Author
+
+**Pawan Parida**
+
+---
+A Python-based healthcare assistant that leverages a knowledge base and custom functions to answer user queries about health topics. Designed for extensibility and easy integration.
+
+## 🚀 Features
+
+- **Question-Answering System**: Answers health-related questions using a curated knowledge base.
+- **Extensible Functions**: Add custom logic for advanced queries.
+- **Modular Design**: Organized codebase for maintainability.
+- **CLI and API Ready**: Easily adaptable for web or command-line interfaces.
+

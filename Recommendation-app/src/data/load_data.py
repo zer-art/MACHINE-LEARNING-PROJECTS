@@ -30,4 +30,6 @@ def load_data(movie_file_name='movies.dat', rating_file_name='ratings.dat'): # S
 
     return movies, ratings
 
-movies, ratings = load_data()
+if __name__ == "__main__":
+    movies, ratings = load_data()
+    print("Data loaded successfully")

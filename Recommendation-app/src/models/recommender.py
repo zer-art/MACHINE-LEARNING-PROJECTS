@@ -2,7 +2,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 import pandas as pd
-from src.data.load_data import movies, ratings
+# from src.data.load_data import movies, ratings
 import os
 import pickle 
 
@@ -86,20 +86,23 @@ class HybridRecommender:
 
   
 
-recommender = HybridRecommender(movies, ratings)
+if __name__ == "__main__":
+    from src.data.load_data import load_data
+    movies, ratings = load_data()
+    recommender = HybridRecommender(movies, ratings)
+    
+    MODEL_PATH = '/home/pawan/devlopment/ML_PROJECTS/Recommendation-app/models/hybrid_model.pkl'
+    def load_recommender_model(model_path="models/production/latest_model.pkl"):
+        script_dir = os.path.dirname(__file__)
+        project_root = os.path.abspath(os.path.join(script_dir, '..', '..'))
+        full_model_path = os.path.join(project_root, model_path)
 
-MODEL_PATH = '/home/pawan/devlopment/ML_PROJECTS/Recommendation-app/models/hybrid_model.pkl'
-def load_recommender_model(model_path="models/production/latest_model.pkl"):
-    script_dir = os.path.dirname(__file__)
-    project_root = os.path.abspath(os.path.join(script_dir, '..', '..'))
-    full_model_path = os.path.join(project_root, model_path)
-
-    if not os.path.exists(full_model_path):
-        raise FileNotFoundError(f"Model file not found at: {full_model_path}")
-    else:
-        recommender.train()
-        with open(MODEL_PATH, 'wb') as f:
-            pickle.dump(recommender, f)
-    with open(full_model_path, 'rb') as f:
-        model = pickle.load(f)  
-    return model         
+        if not os.path.exists(full_model_path):
+            raise FileNotFoundError(f"Model file not found at: {full_model_path}")
+        else:
+            recommender.train()
+            with open(MODEL_PATH, 'wb') as f:
+                pickle.dump(recommender, f)
+        with open(full_model_path, 'rb') as f:
+            model = pickle.load(f)  
+        return model         

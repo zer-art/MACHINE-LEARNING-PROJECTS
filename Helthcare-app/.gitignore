@@ -1,0 +1,9 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+
+# macOS artifacts
+.DS_Store
+
+# Python packaging artifacts
+*.egg-info/

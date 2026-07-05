@@ -25,7 +25,7 @@ To ensure responsiveness and reliability, we track key performance indicators. Y
 | **Initialization Time** | Time to load embeddings and connect to Pinecone | ~2.5s |
 | **Query Latency** | Time to retrieve docs and generate answer | ~1.5s - 3.0s |
 | **Knowledge Base** | Number of medical documents indexed | *Dynamic* |
-| **Model** | LLM used for generation | Gemini 1.5 Flash |
+| **Model** | LLM used for generation | Gemini 2.0 Flash |
 
 *Note: Latency depends on network speed and API response times.*
 

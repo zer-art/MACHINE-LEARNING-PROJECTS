@@ -1,3 +1,61 @@
-# pixi environments
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local environments and tooling
+.env
+.env.*
+.venv/
+venv/
+env/
+ENV/
 .pixi/*
 !.pixi/config.toml
+
+# Dataset and generated data files
+*.csv
+*.tsv
+*.json
+*.parquet
+*.feather
+*.xlsx
+*.xls
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.joblib
+*.pkl
+*.pickle
+*.sav
+*.zip
+*.tar
+*.gz
+*.bz2
+*.xz
+
+# Model artifacts
+model/
+models/
+*.onnx
+*.pt
+*.pth
+
+# Build artifacts and package outputs
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp

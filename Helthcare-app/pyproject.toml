@@ -1,3 +1,28 @@
 [build-system]
-requires = ["setuptools>=61.0.0"] # Or a version compatible with your setup.py needs
+requires = ["setuptools>=61.0.0"]
 build-backend = "setuptools.build_meta"
+
+[tool.pixi.workspace]
+name = "Helthcare-app"
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[tool.pixi.tasks]
+start = "streamlit run app.py"
+benchmark = "python benchmark.py"
+
+[tool.pixi.dependencies]
+python = "==3.11"
+streamlit = ">=1.56.0,<2"
+python-dotenv = ">=1.2.2,<2"
+sentence-transformers = ">=5.4.1,<6"
+torchvision = ">=0.20.1,<0.23"
+pypdf = ">=6.10.2,<7"
+langchain = ">=0.3.18,<0.4"
+langchain-community = ">=0.3.18,<0.4"
+langchain-text-splitters = ">=0.3.6,<0.4"
+langchain-huggingface = ">=0.1.2,<0.2"
+
+[tool.pixi.pypi-dependencies]
+langchain-pinecone = ">=0.2.1"
+langchain-google-genai = ">=2.0.7"

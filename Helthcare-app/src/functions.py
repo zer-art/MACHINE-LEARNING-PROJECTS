@@ -1,7 +1,7 @@
-from langchain.document_loaders import PyPDFLoader , DirectoryLoader
+from langchain_community.document_loaders import PyPDFLoader , DirectoryLoader
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_pinecone import PineconeVectorStore
@@ -13,6 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()
 pinecode_api = os.environ.get('Pinecode_API')
 gemini_api = os.environ.get('Gemini_API')
+gemini_model = os.environ.get('GEMINI_MODEL', 'gemini-2.0-flash')
 
 #setting api as local variable
 os.environ["GEMINI_API_KEY"] = gemini_api
@@ -57,7 +58,7 @@ def load_rag_chain():
     )
 
     gemini = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash",
+        model=gemini_model,
         temperature=0.2,
         max_output_tokens=1024,
         top_p=0.95,

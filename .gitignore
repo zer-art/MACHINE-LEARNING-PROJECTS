@@ -1,6 +1,42 @@
-# pixi environments
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Local environments and tooling
+.env
+.env.*
+.venv/
+venv/
+env/
+ENV/
 .pixi/*
 !.pixi/config.toml
+
+# Dataset and generated data files
+*.csv
+*.tsv
+*.json
+*.parquet
+*.feather
+*.xlsx
+*.xls
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.joblib
+*.pkl
+*.pickle
+*.sav
+
+# Model artifacts
+model/
+models/
+*.onnx
+*.pt
+*.pth
 
 # macOS artifacts
 .DS_Store
